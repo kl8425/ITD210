@@ -1,0 +1,70 @@
+body 
+{ 
+    font-family: Arial, Helvetica, sans-serif; 
+    background: #f7f7f7; 
+    color: #222; 
+}
+
+main 
+{ 
+    width: 100%; 
+}
+
+.item 
+{
+    width: 100%;          
+    box-sizing: border-box; 
+    float: left;           
+    padding: 10px;        
+}
+
+body.minerals
+{
+    background-color: lightblue;
+}
+
+body.vegetables
+{
+    color: black;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 500px) 
+{
+    .item
+    {
+        width: 50%
+    }
+
+    body.minerals
+    {
+        background-color: lightgreen;
+    }
+
+    body.vegetables
+    {
+        color: brown;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1000px) 
+{
+    .item
+    {
+        width: 25%;
+    }
+    
+    body.minerals
+    {
+        background-color: lightcoral;
+    }
+
+    body.vegetables
+    {
+        color: orange;
+        font-size: 20px;
+    }
+}
+
+
