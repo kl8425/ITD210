@@ -1,0 +1,58 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.gallery 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure 
+{
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+figcaption 
+{
+    padding: 5px;
+}
+
+@media (min-width: 400px) 
+{
+    figure 
+    {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 600px) 
+{
+    figure 
+    {
+        width: calc(33.33% - 10px);
+    }
+}
+
+@media (min-width: 1000px) 
+{
+    figure 
+    {
+        width: calc(16.5% - 10px);
+    }
+}
